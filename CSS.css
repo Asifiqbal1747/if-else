@@ -1,0 +1,21 @@
+body{background-color: aquamarine;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+
+
+function cashValue() {
+    let money = document.getElementById('result').value;
+    if (money >= 90000)
+     {
+        let zakat = money/40;
+        document.getElementById('result').innerText=zakat;
+    }else
+    {
+        document.getElementById('result').innerText="No Zakat";
+    }
+}
